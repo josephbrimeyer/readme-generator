@@ -36,21 +36,11 @@ inquirer.prompt([
     name: "installation",
     message: "Describe the installation of this app."
   },
-  {
-    type: "checkbox",
-    message: "What is your preferred method of communication?",
-    name: "contact",
-    choices: [
-      "email",
-      "phone",
-      "telekinesis"
-    ]
-
-  }
+  
 ]).then(function (data) {
 
-  function writeToFile(fileName, data) {
-    let filename = data.name.toLowerCase().split(' ').join('') + ".json";
+  // function writeToFile(fileName, data) {
+    let filename = data.title.toLowerCase().split(' ').join('') + ".json";
 
     fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
 
@@ -61,56 +51,12 @@ inquirer.prompt([
       console.log("Success!");
 
     });
-  };
+  // };
 });
 
-function init() {
+// function init() {
 
-}
+// }
 
-init();
+// init();
 
-// var inquirer = require("inquirer");
-// var fs = require('fs');
-
-// inquirer.prompt([
-//   {
-//     type: "input",
-//     name: "name",
-//     message: "What is your name?"
-//   },
-//   {
-//     type: "checkbox",
-//     message: "What languages do you know?",
-//     name: "stack",
-//     choices: [
-//       "HTML", 
-//       "CSS", 
-//       "JavaScript", 
-//       "MySQL"
-//     ]
-//   },
-//   {
-//     type: "list",
-//     message: "What is your preferred method of communication?",
-//     name: "contact",
-//     choices: [
-//       "email",
-//       "phone",
-//       "telekinesis"
-//     ]
-//   }
-// ]).then(function(data) {
-
-//   var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-
-//   fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
-
-//     if (err) {
-//       return console.log(err);
-//     }
-
-//     console.log("Success!");
-
-//   });
-// });
