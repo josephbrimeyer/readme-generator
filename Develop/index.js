@@ -12,22 +12,27 @@ inquirer.prompt([
   {
     type: "input",
     name: "description",
-    message: "Enter a description for this project."
+    message: "Enter a detailed description for your project."
   },
   {
     type: "input",
-    name: "table of contents",
+    name: "tableOfContents",
     message: "Enter a table of contents for this project."
   },
   {
     type: "input",
     name: "installation",
-    message: "Describe the installation of this app."
+    message: "What are the steps required to install your project?"
   },
   {
     type: "input",
     name: "usage",
-    message: "Describe how to use the app."
+    message: "Provide instructions and examples for use."
+  },
+  {
+    type: "input",
+    name: "credits",
+    message: "List your collaborators and any third-party assets."
   },
   {
     type: "list",
@@ -41,9 +46,15 @@ inquirer.prompt([
     ]
   },
   {
-    type: "input",
-    name: "contributors",
-    message: "Who contributed to the application?"
+    type: "list",
+    message: "Select a badge to use for the project.",
+    name: "badge",
+    choices: [
+      "Badge1",
+      "Badge2",
+      "Badge3",
+      "Badge4",
+    ]
   },
   {
     type: "input",
@@ -52,38 +63,31 @@ inquirer.prompt([
   },
   {
     type: "input",
-    name: "github user name",
+    name: "githubUserName",
     message: "Enter your GitHub user name."
   },
   {
     type: "input",
-    name: "github email",
+    name: "githubEmail",
     message: "Enter your GitHub email address."
   },
-  
-  
+
+
 ]).then(function (data) {
 
-   // function writeToFile(fileName, data) {
-    // let filename = data.title.toLowerCase().split(' ').join('') + ".json";
-  let markdownString = generateMarkdown (data) 
+  let markdownString = generateMarkdown(data)
+  console.log(markdownString);
   const pathToReadMeFile = path.join(__dirname, "myReadMe.md");
 
-    fs.writeFile(pathToReadMeFile, markdownString, function (err) {
+  fs.writeFile(pathToReadMeFile, markdownString, function (err) {
 
-      if (err) {
-        return console.log(err);
-      }
+    if (err) {
+      return console.log(err);
+    }
 
-      console.log("Success!");
+    console.log("Success!");
 
-    });
+  });
   // };
 });
-
-// function init() {
-
-// }
-
-// init();
 
