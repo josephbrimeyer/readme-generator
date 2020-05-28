@@ -4,7 +4,10 @@ function generateMarkdown(data) {
 ## Description 
 ${data.description}
 ## Table of Contents 
-${data.tableOfContents} 
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 ## Installation
 ${data.installation}
 ## Usage 
@@ -14,13 +17,14 @@ ${data.credits}
 ## License 
 ${data.license}
 ## Badges 
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 ${data.badge}
 ## Tests
 ${data.tests}
 ## Contributing
 [Contribution Covenant](https://www.contributor-covenant.org/) 
-## GitHub User Name
-${data.githubUserName}
+## GitHub Link
+https://www.github.com/${data.githubUserName}/
 ## GitHub Email 
 ${data.githubEmail} 
 

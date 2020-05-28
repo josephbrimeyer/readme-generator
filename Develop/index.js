@@ -16,11 +16,6 @@ inquirer.prompt([
   },
   {
     type: "input",
-    name: "tableOfContents",
-    message: "Enter a table of contents for this project."
-  },
-  {
-    type: "input",
     name: "installation",
     message: "What are the steps required to install your project?"
   },
@@ -43,17 +38,6 @@ inquirer.prompt([
       "Apache",
       "GNU",
       "Mozilla"
-    ]
-  },
-  {
-    type: "list",
-    message: "Select a badge to use for the project.",
-    name: "badge",
-    choices: [
-      "Badge1",
-      "Badge2",
-      "Badge3",
-      "Badge4",
     ]
   },
   {
@@ -88,6 +72,5 @@ inquirer.prompt([
     console.log("Success!");
 
   });
-  // };
 });
 
