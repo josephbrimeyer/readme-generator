@@ -48,6 +48,11 @@ inquirer.prompt([
   },
   {
     type: "input",
+    name: "questions",
+    message: "Are their any questions?"
+  },
+  {
+    type: "input",
     name: "githubUserName",
     message: "Enter your GitHub user name.",
     default: "josephbrimeyer",
