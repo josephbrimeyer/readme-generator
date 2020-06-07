@@ -16,7 +16,7 @@ To install the necessary dependencies, run the following command:
 The user will need to create a copy of the readme-generator repository on their local machine.  The will need to run an npm init, npm inquirer, and download node.js.  Once these steps are completed, the user can go to the root directory of this app in their command line and type node index.js.
 ## Usage 
 The user will simply respond to the prompts in their console.  At the end of the questions, a new myreadme.md file will be created in their root directory with all of the information requrired for a good readme.md document.  See below for a demo:
-![Demo](./utils/demo.gif)
+![Demo](./Develop/utils/demo.gif)
 ## Credits
 I utilized node.js, markdown, github, castify, and inquirer npm to create this application.
 ## License 
