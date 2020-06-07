@@ -1,7 +1,8 @@
 
-# Read-me Generator
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+# Readme-Generator
 ## Description 
-This project will create a read-me using node.js.
+This project dynamically creates a readme document for this project.
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -9,24 +10,22 @@ This project will create a read-me using node.js.
 * [License](#license)
 * [Tests](#tests)
 * [Contributing](#contributing)
-* [GitHub Link](#github link)
 * [Email](#email) 
 ## Installation
 To install the necessary dependencies, run the following command:
-Run an npm install, and follow the prompts in node.js.
+node and the files in my repository.
 ## Usage 
-First you will need to run an npm install, then enter node.js index.js in the command line to begin the prompts.
+run node index.js in the root directory and answer the prompts.
+![Demo](./utils/readme-generator.gif)
 ## Credits
-I would like to mention npm inquirer, and node.js as contributing to the project.
+just me
 ## License 
-This product is licensed under the Apache 2.0 license.
-## Badges 
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+This product is licensed under the MIT license.
 ## Tests
-The testing has been through commandline tests to render data to the .md file.
+Ran the code in the cmd line and tested with a .md previewer.
 ## Contributing
 [Contribution Covenant](https://www.contributor-covenant.org/) 
 ## GitHub Link
-https://www.github.com/josephbrimeyer/
+https://www.github.com/josephbrimeyer/readme-generator/
 ## Email 
 jbrimeyer@gmail.com 

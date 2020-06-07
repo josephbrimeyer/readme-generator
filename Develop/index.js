@@ -8,57 +8,26 @@ inquirer.prompt([
     type: "input",
     name: "title",
     message: "What is the title of your project?",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please enter the title of your project."
-      }
-      return true;
-    }
   },
   {
     type: "input",
     name: "description",
     message: "Enter a detailed description for your project.",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please enter a detailed description for your project."
-      }
-      return true;
-    }
   },
   {
     type: "input",
     name: "installation",
     message: "What are the steps required to install your project?",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please enter the steps required to install your project."
-      }
-      return true;
-    }
-
   },
   {
     type: "input",
     name: "usage",
     message: "Provide instructions and examples for use.",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please provide instructions and examples for use."
-      }
-      return true;
-    }
   },
   {
     type: "input",
     name: "credits",
     message: "List your collaborators and any third-party assets.",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please list your collaborators and any third-party assets."
-      }
-      return true;
-    }
   },
   {
     type: "list",
@@ -82,12 +51,6 @@ inquirer.prompt([
     name: "githubUserName",
     message: "Enter your GitHub user name.",
     default: "josephbrimeyer",
-    validateForm: function (input) {
-      if (input === "") {
-        return "Please enter your GitHub user name."
-      }
-      return true;
-    }
   },
   {
     type: "input",
