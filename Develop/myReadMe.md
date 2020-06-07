@@ -1,9 +1,8 @@
-function generateMarkdown(data) {
-  return `
+
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-# ${data.title}
+# Readme-generator
 ## Description 
-${data.description}
+This will create a markdown file based off user responses.
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,25 +15,21 @@ ${data.description}
 * [Email](#email) 
 ## Installation
 To install the necessary dependencies, run the following command:
-${data.installation}
+Download the files and run on cmd line.
 ## Usage 
-${data.usage}
+ The user will answer prompts to complete a .md file.  This file can be used as a readme for their project.
 ![Demo](./utils/readme-generator.gif)
 ## Credits
-${data.credits}
+I used inquirer, node.js, and other technologies.
 ## License 
-This product is licensed under the ${data.license} license.
+This product is licensed under the MIT license.
 ## Tests
-${data.tests}
+I tested in cmd line and viewed the .md file in vs code.
 ## Questions
-${data.questions}
+no
 ## Contributing
 [Contribution Covenant](https://www.contributor-covenant.org/) 
 ## GitHub 
-https://www.github.com/${data.githubUserName}/readme-generator/
+https://www.github.com/josephbrimeyer/readme-generator/
 ## Email 
-${data.email} 
-`;
-}
-
-module.exports = generateMarkdown;
+jbrimeyer@gmail.com 
