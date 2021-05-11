@@ -1,8 +1,8 @@
 
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-# Readme-generator
+# Fitness Tracker
 ## Description 
-This will create a markdown file based off user responses.
+Fitness-tracker is an application that allows a user to track their workouts.  The user is able to enter workouts based on cardio or resistance.  The application logs multiple exercises on a given day.   
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -15,18 +15,18 @@ This will create a markdown file based off user responses.
 * [Email](#email) 
 ## Installation
 To install the necessary dependencies, run the following command:
-Download the files and run on cmd line.
+The user can launch the application by clicking on the following link: https://josephbrimeyer.github.io/fitness-tracker/
 ## Usage 
- The user will answer prompts to complete a .md file.  This file can be used as a readme for their project.
+Upon launching the application the user is able to create a new workout or continue with an existing workout.  The application tracks the exercises, weight, duration, and distance based on the type of exercise selected. 
 ![Demo](./utils/readme-generator.gif)
 ## Credits
-I used inquirer, node.js, and other technologies.
+Trilogy, express, mongod, mongojs, mongoose, and morgan.
 ## License 
 This product is licensed under the MIT license.
 ## Tests
-I tested in cmd line and viewed the .md file in vs code.
+
 ## Questions
-no
+
 ## Contributing
 [Contribution Covenant](https://www.contributor-covenant.org/) 
 ## GitHub 
